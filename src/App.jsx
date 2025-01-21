@@ -1,49 +1,32 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css'
+import Navbar from './Navbar';
+import Home from './Home';
+import About from './About';
 
-function Home() {
+function NotFound() {
   return (
     <div>
-      <h1>Matcha Blog</h1>
-      <p>This is the home page.</p>
+      <h1>Page Not Found</h1>
+      <p>We couldn't find what you were looking for.</p>
     </div>
   );
 }
-
-function About() {
-  return (
-    <div>
-      <h1>About Me</h1>
-      <p>This is the about me page.</p>
-    </div>
-  );
-}
-
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <Router>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About Me</Link>
-          </li>
-        </ul>
-      </nav>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
+      <footer className="footer">
+        <p>© 2025 Matcha Blog, LLC. All rights reserved.</p>
+      </footer>
     </Router>
   );
 }
 
-export default App
+export default App;

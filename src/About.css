@@ -1,0 +1,121 @@
+.about-page {
+    display: flex;
+    margin-top: 165px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 40px;
+    padding: 20px;
+    min-height: 100vh;
+    background-color: #ffffff;
+}
+
+.about-header {
+    text-align: center;
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 20px;
+    background-color: #bac584;
+    padding: 20px;
+    width: 100%;
+}
+
+.about-grid,
+.about-highlights {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.about-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-photo {
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border: #bac584 solid 3px;
+}
+
+.about-right {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #444;
+}
+
+.rules-section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.rules-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #000000;
+    background-color: #b0bb7e;
+    border: rgba(0, 0, 0, 0.603) solid 2px;
+    border-radius: 8px;
+}
+
+.rules-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+
+.rule {
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.rule h3 {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.rule p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+
+
+.highlight {
+    text-align: center;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-mission {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    color: #555;
+    max-width: 800px;
+}
