@@ -6,6 +6,17 @@ function Home() {
             <div className="motto-container">
                 <p className="motto">Hot Takes, Iced Matcha</p>
             </div>
+            <div className="ad-row">
+                <div class="ad">
+                        <img src="OYO1.jpg" alt="ad" class="pad" />
+                </div>
+                <div class="ad">
+                        <img src="ad2.jpg" alt="ad" class="pad" />
+                </div>
+                <div class="ad">
+                        <img src="ad3.jpg" alt="ad" class="pad" />
+                </div>
+            </div>
             <div className="content-container">
                 <div class="left-column">
                     <h2 class="featured-title">Featured Posts</h2>

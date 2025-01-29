@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './Navbar.css';
+import './NotFound.css'
 
 function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -31,16 +32,16 @@ function Navbar() {
                     <div className="dropdown-menu">
                         <ul>
                             <li className="category">Cafe Reviews</li>
-                            <li><Link to="*">Matcha to Avoid <span className="icon"> 🚫</span></Link></li>
-                            <li><Link to="*">Hidden Gems<span className="icon"> 💎</span></Link></li>
-                            <li><Link to="*">Best of Drive-Thru <span className="icon"> 🚗</span></Link></li>
+                            <li><Link to="/matcha-to-avoid">Matcha to Avoid <span className="icon"> 🚫</span></Link></li>
+                            <li><Link to="/hidden-gems">Hidden Gems<span className="icon"> 💎</span></Link></li>
+                            <li><Link to="/best-of-drive-thru">Best of Drive-Thru <span className="icon"> 🚗</span></Link></li>
                             <li className="category">Cafe Ambiance</li>
-                            <li><Link to="*">Cozy Spots<span className="icon"> 🛋️</span></Link></li>
-                            <li><Link to="*">Aesthetic for the 'Gram<span className="icon"> 📸</span></Link></li>
+                            <li><Link to="/cozy-spots">Cozy Spots<span className="icon"> 🛋️</span></Link></li>
+                            <li><Link to="/aesthetic-for-the-gram">Aesthetic for the 'Gram<span className="icon"> 📸</span></Link></li>
                             <li className="category">Must-Visit by City</li>
-                            <li><Link to="*">Orem <span className="icon">🏞️</span> </Link></li>
-                            <li><Link to="*">Provo <span className="icon">🏘️ </span></Link></li>
-                            <li><Link to="*">SLC <span className="icon">🏔️ </span></Link></li>
+                            <li><Link to="/orem">Orem <span className="icon">🏞️</span> </Link></li>
+                            <li><Link to="/provo">Provo <span className="icon">🏘️ </span></Link></li>
+                            <li><Link to="/slc">SLC <span className="icon">🏔️ </span></Link></li>
                         </ul>
                     </div>
                 )}
@@ -51,25 +52,37 @@ function Navbar() {
                     <span>|</span>
                     <span>Matcha Drinks</span>
                     <span>|</span>
+                    <span>Sigma Ohio</span>
+                    <span>|</span>
                     <span>Cafe Ambiance</span>
                     <span>|</span>
                     <span>Price & Value</span>
                     <span>|</span>
+                    <span>Skibidi Toilet Rizz</span>
+                    <span>|</span>
                     <span>Reader Picks</span>
                     <span>|</span>
                     <span>Must-Visit Matcha Cafes</span>
+                    <span>|</span>
+                    <span>Are You Still Reading This?</span>
                     <span>|</span>
                     <span>Cafe Reviews</span>
                     <span>|</span>
                     <span>Matcha Drinks</span>
                     <span>|</span>
+                    <span>Sigma Ohio</span>
+                    <span>|</span>
                     <span>Cafe Ambiance</span>
                     <span>|</span>
                     <span>Price & Value</span>
                     <span>|</span>
+                    <span>Skibidi Toilet Rizz</span>
+                    <span>|</span>
                     <span>Reader Picks</span>
                     <span>|</span>
                     <span>Must-Visit Matcha Cafes</span>
+                    <span>|</span>
+                    <span>Are You Still Reading This?</span>
                     <span>|</span>
                 </div>
             </div>
