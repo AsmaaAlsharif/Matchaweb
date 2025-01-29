@@ -31,17 +31,19 @@ function Navbar() {
                 {menuOpen && (
                     <div className="dropdown-menu">
                         <ul>
+                            <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
+                            <li><Link to="/About" onClick={toggleMenu}>About</Link></li>
                             <li className="category">Cafe Reviews</li>
-                            <li><Link to="/matcha-to-avoid">Matcha to Avoid <span className="icon"> 🚫</span></Link></li>
-                            <li><Link to="/hidden-gems">Hidden Gems<span className="icon"> 💎</span></Link></li>
-                            <li><Link to="/best-of-drive-thru">Best of Drive-Thru <span className="icon"> 🚗</span></Link></li>
-                            <li className="category">Cafe Ambiance</li>
-                            <li><Link to="/cozy-spots">Cozy Spots<span className="icon"> 🛋️</span></Link></li>
-                            <li><Link to="/aesthetic-for-the-gram">Aesthetic for the 'Gram<span className="icon"> 📸</span></Link></li>
+                            <li><Link to="/matcha-to-avoid" onClick={toggleMenu}>Matcha to Avoid <span className="icon"> 🚫</span></Link></li>
+                            <li><Link to="/hidden-gems" onClick={toggleMenu}>Hidden Gems<span className="icon"> 💎</span></Link></li>
+                            <li><Link to="/best-of-drive-thru" onClick={toggleMenu}>Best of Drive-Thru <span className="icon"> 🚗</span></Link></li>
+                            <li className="category" onClick={toggleMenu}>Cafe Ambiance</li>
+                            <li><Link to="/cozy-spots" onClick={toggleMenu}>Cozy Spots<span className="icon"> 🛋️</span></Link></li>
+                            <li><Link to="/aesthetic-for-the-gram" onClick={toggleMenu}>Aesthetic for the 'Gram<span className="icon"> 📸</span></Link></li>
                             <li className="category">Must-Visit by City</li>
-                            <li><Link to="/orem">Orem <span className="icon">🏞️</span> </Link></li>
-                            <li><Link to="/provo">Provo <span className="icon">🏘️ </span></Link></li>
-                            <li><Link to="/slc">SLC <span className="icon">🏔️ </span></Link></li>
+                            <li><Link to="/orem" onClick={toggleMenu}>Orem <span className="icon">🏞️</span> </Link></li>
+                            <li><Link to="/provo" onClick={toggleMenu}>Provo <span className="icon">🏘️ </span></Link></li>
+                            <li><Link to="/slc" onClick={toggleMenu}>SLC <span className="icon">🏔️ </span></Link></li>
                         </ul>
                     </div>
                 )}
